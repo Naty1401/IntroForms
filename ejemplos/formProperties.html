@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario con propiedades establecidas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario con propiedades establecidas</h1>
+    </header>
+    <main>
+      <form action="" method="" enctype="">
+        <!-- type text -->
+        <div>
+          <label for="username">Nombre de usuario</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            value="Juanito"
+            placeholder="Ingrese nombre"
+          />
+        </div>
+        <!-- type number  -->
+        <div>
+          <label for="userAge">Edad</label>
+          <input type="number" name="userAge" id="userAge" />
+        </div>
+        <!-- type email  -->
+        <div>
+          <label for="userEmail">Email</label>
+          <input type="email" name="userEmail" id="userEmail" />
+        </div>
+        <!-- type password  -->
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <!-- type checkbox -->
+        <div>
+          <input type="checkbox" name="conditions" id="conditions" />
+          <label for="conditions">Terminos y condiciones</label>
+        </div>
+        <!-- type radio -->
+        <div>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Masculino</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
