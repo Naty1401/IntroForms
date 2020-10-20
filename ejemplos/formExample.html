@@ -3,22 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/custom.css" />
     <title>Formulario Inicio de sesión</title>
   </head>
   <body>
     <header>
-      <h1>Formulario Inicio de sesión</h1>
+      <h1>Formularios de Ejemplo</h1>
     </header>
     <main>
       <!-- formulario de inicio de sesion -->
-      <h2>Iniciar Sesión</h2>
-      <form action="">
-        <input type="email" />
-        <input type="password" />
+      <h3>Iniciar Sesión</h3>
+      <form action="" method="GET">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Ingrese Email"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Ingrese Password"
+        />
         <button type="submit">Ingresar</button>
       </form>
       <!-- formulario de registro  -->
-      <form action=""></form>
+      <h3>Registro</h3>
+      <form action="">
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Ingrese name" />
+        </div>
+        <div>
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            name="lasname"
+            id="lasname"
+            placeholder="Ingrese apellido"
+          />
+        </div>
+        <div>
+          <label for="edad">Edad</label>
+          <input
+            type="number"
+            name="edad"
+            id="edad"
+            placeholder="Ingrese edad"
+          />
+        </div>
+        <div>
+          <label for="document">Tipo de Documento</label>
+          <select name="documentType" id="document">
+            <option value="dni">DNI</option>
+            <option value="pas">Pasaporte</option>
+            <option value="cuit">CUIT</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Registrar</button>
+        </div>
+      </form>
     </main>
   </body>
 </html>
