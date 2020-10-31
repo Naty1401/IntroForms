@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario contacto</title>
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>CONTACTAME</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          dolor itaque error aut deleniti amet exercitationem necessitatibus
+          eius unde ad cum doloremque, nobis natus repellendus cumque. Voluptas
+          perferendis nesciunt sed?
+        </p>
+      </section>
+      <section>
+        <h1>ESCRIBEME</h1>
+        <form action="" class="form">
+          <div class="row-element">
+            <div class="element">
+              <label for="userName">Nombre*</label>
+              <input
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="p.j: Ada"
+                required
+              />
+            </div>
+            <div class="element">
+              <label for="userLastname">Apellido*</label>
+              <input
+                type="text"
+                name="userLastname"
+                id="userLastname"
+                placeholder="p.j: Lovelace"
+                required
+              />
+            </div>
+          </div>
+          <div class="element">
+            <label for="userEmail">Email*</label>
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              placeholder="p.e.: ada.lovelace@gmail.com"
+              required
+            />
+          </div>
+          <div class="element">
+            <label for="userMessage">Mensaje*</label>
+            <textarea
+              name="userMessage"
+              id="userMessage"
+              cols="30"
+              rows="20"
+              placeholder="Escriba un mensaje aquí :)"
+            ></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
